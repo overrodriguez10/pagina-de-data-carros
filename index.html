@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundo Automotriz API</title>
+    <link rel="stylesheet" href="./src/css/estilos.css">
+</head>
+<body>
+
+    <main id="vista-inicio">
+        <h1 id="titulo-principal">El Mundo Del Automovilismo</h1>
+        <img id="imagen-principal" src="./src/img/carreras-rendimiento-automoviles-deportivos_1020697-312772.jpg" alt="Autos">
+        <p id="descripcion">
+            Vamos a sumergirnos en el mundo automovilístico, donde podrás explorar una gran variedad de vehículos y descubrir sus características en tiempo real. A continuación, dependiendo de la categoría que elijas, podrás ver diferentes tipos de carros, desde modelos de carrera y deportivos hasta clásicos, familiares, todoterreno, eléctricos y de lujo. Selecciona una categoría y comienza a explorar.
+        </p>
+
+        <h3 id="subtitulo">Tipos de Vehículos</h3>
+        <br><br>
+        <div id="botonesTipos">
+            <button id="btn-carrera">Carrera</button>
+            <button id="btn-clasico">Clásico</button>
+            <button id="btn-todoterreno">Todoterreno</button>
+            <button id="btn-deportivo">Deportivo</button>
+            <button id="btn-lujo">Lujo</button>
+            <button id="btn-familiar">Familiar</button>
+            <button id="btn-electrico">Eléctrico</button>
+        </div>
+    </main>
+
+    <section id="vista-detalle" style="display: none;">
+        <div id="card">
+            <h2 id="categoria-titulo">Cargando...</h2>
+            
+            <div id="imagen-contenedor">
+                <img id="carro-img" src="" alt="Carro">
+            </div>
+
+            <div id="datos-carro">
+                <div id="fila-nombre"><span id="clave-nombre">Nombre:</span> <span id="val-nombre">---</span></div>
+                <div id="fila-marca"><span id="clave-marca">Marca:</span> <span id="val-marca">---</span></div>
+                <div id="fila-anio"><span id="clave-anio">Año:</span> <span id="val-anio">---</span></div>
+                <div id="fila-precio"><span id="clave-precio">Precio:</span> <span id="val-precio">---</span></div>
+                <div id="fila-color"><span id="clave-color">Color:</span> <span id="val-color">---</span></div>
+                <div id="fila-potencia"><span id="clave-potencia">Potencia:</span> <span id="val-potencia">---</span></div>
+                <div id="fila-velocidad"><span id="clave-velocidad">Velocidad Max:</span> <span id="val-velocidad">---</span></div>
+                <div id="fila-combustible"><span id="clave-combustible">Combustible:</span> <span id="val-combustible">---</span></div>
+            </div>
+
+            <div id="controles">
+                <button id="btn-inicio">Inicio</button>
+                <button id="btn-siguiente">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/logica/logica.js"></script>
+</body>
+</html>

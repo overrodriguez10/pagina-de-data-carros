@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admin - Carros</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚗 Panel Admin - Crear Carros</h1>
+
+        <!-- FORMULARIO (IMPORTANTE: ID CORRECTO) -->
+        <form id="formCarro">
+
+            <label>Tipo</label>
+            <select id="tipo">
+                <option value="carrera">Carrera</option>
+                <option value="clasico">Clásico</option>
+                <option value="todoterreno">Todoterreno</option>
+                <option value="deportivo">Deportivo</option>
+                <option value="lujo">Lujo</option>
+                <option value="familiar">Familiar</option>
+                <option value="electrico">Eléctrico</option>
+            </select>
+
+            <label>Nombre</label>
+            <input type="text" id="nombre" placeholder="Ej: Bugatti Chiron" required>
+
+            <label>Marca</label>
+            <input type="text" id="marca" placeholder="Ej: Bugatti" required>
+
+            <label>Año</label>
+            <input type="number" id="año" placeholder="2024" required>
+
+            <label>Precio</label>
+            <input type="number" id="precio" placeholder="3000000" required>
+
+            <label>Color</label>
+            <input type="text" id="color" placeholder="rojo" required>
+
+            <label>Potencia</label>
+            <input type="number" id="potencia" placeholder="1500" required>
+
+            <label>Velocidad Máxima</label>
+            <input type="number" id="velocidadMax" placeholder="420" required>
+
+            <label>Combustible</label>
+            <input type="text" id="combustible" placeholder="gasolina / eléctrico" required>
+
+            <label>Imagen URL</label>
+            <input type="text" id="imagen" placeholder="https://..." required>
+
+            <button type="submit">🚀 Crear Carro</button>
+
+        </form>
+
+        <!-- MENSAJE DE RESPUESTA -->
+        <p id="mensaje"></p>
+
+    </div>
+
+    <!-- IMPORTANTE: SIEMPRE AL FINAL -->
+    <script src="admin.js"></script>
+
+</body>
+</html>
